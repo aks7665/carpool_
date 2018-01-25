@@ -1,0 +1,626 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3F3E8;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.hero {
+    background-image: url('https://anandipaliwal.files.wordpress.com/2015/06/food-table-relisted.jpg');
+    background-size: cover;
+    min-height: 300px;
+    border-radius: 4px;
+    color: white;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.orPage {
+  background-color: white;
+  height: 780px;
+}
+
+#dropDown {
+  height: 40px;
+  border-radius: 4%;
+  border-color: #ccc;
+}
+#app .navbar {
+    color: white;
+    background-color: #cb202d;
+    margin-bottom: 0px !important;
+
+  }
+
+#app .navbar a {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#app .login {
+    background-image: url(img/login.jpeg);
+    background-size: cover;
+    height: 90vh;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#app .login-form {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 1rem;
+    padding-top: 0;
+    border-radius: 4px;
+}
+
+.bolder {
+    font-weight: bold;
+}
+
+#loginNavLogo {
+    margin-left: 25px;
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: #cb202d;
+    display: inline-block;
+}
+
+.loginnav{
+    height: 10vh;
+}
+
+.loginNavSign {
+    display: inline-block;
+}
+
+#logNavUp {
+    margin-right: 30px;
+    margin-top: 15px;
+    background-color: #cb202d;
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 10%;
+    color: white;
+    cursor: pointer;
+}
+
+input.ng-invalid.ng-dirty {
+    border: 1px solid red;
+}
+
+  /**/
+  /**/
+/**/
+.details {
+    margin-bottom: 2rem;
+    border-bottom: solid #cb202d 1px;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+}
+
+.sb1 {
+  width: 30% !important;
+  margin-right: 1.5rem;
+}
+
+.sb2 {
+  width: 30% !important;
+  margin-right: 1.5rem;
+}
+
+.transferIcon {
+  margin-right: 1.5rem;
+  font-size: 2.5rem;
+  height: 34px;
+  /*background-color: #ccc;*/
+  border-radius: 10%;
+  /*border: 0.5px solid grey;*/
+  padding: 1px 2px;
+}
+
+#mapIconG {
+  color: green;
+}
+
+#mapIconR {
+  color: red;
+}
+
+.dateBox{
+  margin-right: 1.5rem;
+  width: 25%;
+}
+
+.search-bar {
+    /*width: 600px;*/
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-bottom: 2rem;*/
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar form .input-wrapper {
+   flex: 1;
+   margin-right: 1rem;
+}
+
+.hero {
+    margin-bottom: 2rem;
+}
+
+.rideDetailCard {
+  background-color: white;
+  position: relative;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  padding: 2rem 2rem 1rem 2rem;
+  border-radius: 4px;
+  height: auto;
+  border-left: 1px red solid;
+  border-right: 1px red solid;
+}
+
+.sideBar {
+  background-color: white;
+  position: relative;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  padding: 2rem 2rem 1rem 2rem;
+  border-radius: 4px;
+  display: inline-block;
+  border-left: 1px red solid;
+  border-right: 1px red solid;
+}
+
+.ride-wrapper {
+    display: flex;
+    font-family: sans-serif;
+}
+
+.ride-wrapper .image {
+    margin-right: 1rem;
+}
+
+.ride-wrapper .image img {
+    border-radius: 50%;
+}
+
+.priceInfo {
+  width: 17%;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.image {
+  width: 20%;
+}
+
+.ride-info {
+  width: 58%;
+}
+
+.price {
+  display: block;
+  color: #00cc66;
+  font-size: 3rem;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.seats {
+  display: block;
+  width: 100%;
+  font-size: 2rem;
+  margin-top: 75px;
+}
+
+.bigger {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.marginl8{
+  margin-left: 8px;
+}
+.ride-wrapper .ride-name {
+    font-size: 24px;
+    color: #cb202d;
+}
+
+.ride-wrapper .ride-category {
+    color: black;
+    text-transform: uppercase;
+}
+
+.ride-wrapper .ride-address {
+    color: black;
+}
+
+.colorRed {
+  color: red;
+}
+
+.colorGreen {
+  color: green;
+}
+
+.ride-extra {
+    display: flex;
+    margin-top: 1rem;
+    border-top: 1px solid #e7e7e7;
+    padding: 1rem;
+}
+
+.ride-extra .type {
+    text-transform: uppercase;
+     color: black;
+     flex: none;
+     margin-right: 2rem;
+}
+
+.rideDetailCard .rating {
+    color: white;
+    background-color: #5BA829;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    
+}
+
+/*.detailContainer {
+  background-color: white;
+  position: relative;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  padding: 2rem 2rem 1rem 2rem;
+  border-radius: 4px;
+  height: auto;
+  border-left: 1px red solid;
+  border-right: 1px red solid;
+}*/
+.detailContainer {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dPhoto {
+  /*margin-top: 10px;*/
+  /*width: 20%;*/
+  /*display: inline-block;*/
+  background-color: blue;
+}
+
+.ddhead {
+  background-color: white;
+  font-size: 25px;
+  padding: 5px;
+  color: red;
+  /*border: 1px solid grey;*/
+  text-align: center;
+  font-weight: bolder;
+
+}
+
+.ddetail {
+  height: 200px;
+}
+
+.cdetail {
+  /*display: inline-block;
+  width: 39%;*/
+  background-color: blue;
+  /*height: 150px;*/
+}
+
+.parallax {
+    background-image: url(img/login.jpeg);
+    height: 670px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 150px;
+    text-align: center;
+    color: #cb202d;
+    font-style: italic;
+}
+
+.parallax2 {
+   background-image: url(img/home.jpg);
+   height: 670px;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-size: 150px;
+   text-align: center;
+   color: #cb202d;
+   font-style: italic;
+}
+
+#homeDiv {
+    height: 800px;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
+#scrollText {
+    font-size: 10px;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    text-decoration: underline;
+}
+
+#tagLine {
+  font-size: 40px;
+  color: white;
+}
+
+.findRide {
+  font-size: 80px;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 150px;
+
+}
+
+.findRide {
+  height: 720px;
+  background-color: #cb202d;
+}
+
+.offerRide {
+  font-size: 80px;
+  color: #cb202d;
+  padding-top: 40px;
+  padding-bottom: 150px;
+  height: 720px;
+  background-color:  white;
+}
+
+.offerRide .row {
+  margin-top: 50px;
+}
+
+#btnHome{
+  width: 300px;
+  margin-left: 12px;
+  font-size: 30px;
+  margin-top: 150px;
+}
+
+#btnHome1{
+  width: 300px;
+  /*margin-left: 12px;*/
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.main{
+  background-image: url(img/login.jpeg);
+  height: 670px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mainSearch {
+    width: 1000px;
+
+}
+
+.headDetails {
+  background-color: #cb202d;
+  color: white;
+}
+
+.tripDetail {
+  padding-top: 20px;
+  background-color: white;
+  height: 660px;
+}
+
+.detailCon {
+
+}
+
+.dDCon {
+  padding-bottom: 20px;
+}
+
+.rDetail {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.driDet {
+  padding-top: 10px;
+}
+
+.seatBox {
+  text-align: center;
+  border-left: solid #cb202d 3px;
+  border-right: solid #cb202d 3px;
+  background-color: white;
+}
+
+.headH {
+  background-color: #cb202d;
+}
+
+#smallT {
+  font-size: 25px;
+}
+
+.row1 {
+  font-size: 50px;
+  color: white;
+  margin-top: 10px;
+  background-color: #1ed842;
+  border-radius: 5%;
+}
+
+.row2 {
+  font-size: 50px;
+  color: white;
+  margin-top: 10px;
+  background-color: #ff5c33;
+  border-radius: 5%;
+}
+
+.row3 {
+    margin-top: 10px;
+}
+
+.row4 {
+    margin: 10px 0px;
+    color: gray;
+    font-size: 8px;
+    font-weight: lighter;
+    word-spacing: 0px;
+}
+
+.row5 {
+    margin-top: 10px;
+}
+
+.boldest{
+  font-weight: bolder;
+}
+
+.colorange {
+  color: #ff5c33;
+}
+
+.colgrey {
+  color: grey;
+}
+
+.colred {
+  color: #cb202d;
+}
+
+.colgreen {
+  color : green;
+}
+
+.colblue {
+  color : blue;
+}
+
+.fs10 {
+  font-size: 10px;
+}
+
+.fs20 {
+  font-size: 20px;
+}
+
+.fs30 {
+  font-size: 30px;
+}
+
+.fs40 {
+  font-size: 40px;
+}
+
+.fs50 {
+  font-size: 50px;
+}
+
+.suBox {
+  border-radius: 2%;
+  color: #5cb85c;
+  font-size: 18px;
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+ #suMain input {
+  margin-bottom: 10px;
+}
+
+#suMain {
+  padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#suBtn {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#suBtn2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 22px;
+}
+
+#colRedId {
+  color: red!important;
+}
+
+#already {
+  margin-top: 7px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+.signupPage {
+  background-image: url(img/login.jpeg);
+  background-size: cover;
+  height: 90vh;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: center;*/
+}
+
+#suMain input {
+    margin-bottom: 10px;
+    height: 40px;
+    background: transparent;
+    outline: 0;
+    color: #1db954;
+    border-style: solid;
+    font-weight: 500;
+    font-size: 20px;
+    /*text-align: center;*/
+}

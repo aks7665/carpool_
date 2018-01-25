@@ -1,0 +1,70 @@
+<div class="main " ng-controller="mainController" style="overflow-y: scroll;">
+  <!-- header starts -->
+    <!-- header ends -->
+    <div class="ui container"  >
+        <div class="details">
+          <!-- search bar -->
+          <div class="search-bar">
+              <form>
+                  <div class="input-group sb1">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-map-marker" id="mapIconR" aria-hidden="true"></span></span>
+                    <input type="text" class="form-control" placeholder="From..." aria-describedby="sizing-addon1" ng-model="fromloc">
+                  </div>
+                  <div class="transferIcon">
+                    <span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>
+                  </div>
+                  <div class="input-group sb1">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-map-marker" id="mapIconG" aria-hidden="true"></span></span>
+                    <input type="text" class="form-control" placeholder="To..." aria-describedby="sizing-addon1" ng-model="toloc">
+                  </div>
+                  <div class="input-group dateBox">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
+                    <input type="date" class="form-control" placeholder="Date" aria-describedby="sizing-addon1" id="frdate">
+                  </div>
+                  <div class="searchButton">
+                    <button type="button" class="btn btn-default" ng-click="findRide()" >Find Ride</button>
+                  </div>
+                  <p id="p1"></p>
+            </form>
+          </div>
+        </div>
+        <div class="rideDetailCard" ng-repeat="i in arr">
+          <div class="ride-wrapper">
+              <div class="image">
+                  <img src="img/mydp.jpg" height="100" width="100">
+              </div>
+              <div class="ride-info" >
+                  <div class="ride-name">
+                  <strong></strong>
+                  </div>
+                  <div>
+                     <i class="fa fa-car" aria-hidden="true"></i><span class="marginl8">{{i.car}}</span>
+                  </div>
+                  <div class="ride-category">
+                     <span class="glyphicon glyphicon-random" aria-hidden="true"></span><span class="marginl8">{{i.dept}} -- {{i.drop}}</span>
+                  </div>
+                  <div class="ride-address">
+                      <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span><span class="marginl8">{{i.date}}</span><span class="glyphicon glyphicon-time marginl8" aria-hidden="true"><span class="marginl8">{{i.time}}</span>
+                  </div>
+              </div>
+              <div class="priceInfo">
+                <div class="price pull-right">
+                  ₹{{i.price}}
+                </div>
+                <div class="seats">
+                  <span class="bigger">{{i.seats_a}} </span>seat left
+                </div>
+              </div>
+          </div>
+
+          <div class="ride-extra">
+              <div class="type">
+                  <div><span class="glyphicon glyphicon-record colorRed" aria-hidden="true"></span><span class="marginl8">{{i.dfrom}}</span></div>
+                  <div><span class="glyphicon glyphicon-record colorGreen" aria-hidden="true"></span><span class="marginl8">{{i.dto}}</span></div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+</div>

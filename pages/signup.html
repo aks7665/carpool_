@@ -1,0 +1,27 @@
+<div class="signupPage" ng-controller="signupController">
+  <div class="row">
+    <div class="col-md-5 suImg">
+    </div>
+    <div class="col-md-3 suBox">
+      <div class="row" id="suMain">
+        <form class="" action="#" method="post">
+          <span>Username</span>
+          <input type="text" class="form-control"required="" id="username" ng-model="username">
+          <span>Email Id</span>
+          <input type="email" class="form-control"required="" id="email" ng-model="email">
+          <span>Phone No</span>
+          <input type="tel" class="form-control"required="" id="phoneno" ng-model="phoneno">
+          <span>Password</span>
+          <input type="text" class="form-control"required="" id="pswd" ng-model="pswd">
+          <span>Birthday</span>
+          <input type="date" class="form-control"required="" id="dob" ng-model="dob">
+          <button type="button" class="btn btn-success" id="suBtn" ng-click="logId()">Sign Up</button>
+          <span id="already">Already have an account? <a href="#">Log in</a></span>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-4">
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="orPage" ng-controller="offerController">
+  <form class="" action="#" method="post">
+    <div class="row">
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-3 suBox" id="suID">
+        <div class="row" id="suMain">
+          <span>Departure Point(City)</span>
+          <input type="text" class="form-control"required="" ng-model="dpointc">
+          <span>Drop-off Point(City)</span>
+          <input type="text" class="form-control"required="" ng-model="dopointc">
+          <span>Departure Point(Detail)</span>
+          <input type="text" class="form-control"required="" ng-model="dpointd">
+          <span>Drop-off Point(Detail)</span>
+          <input type="text" class="form-control"required="" ng-model="dopointd">
+        </div>
+      </div>
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-3 suImg suBox">
+        <div class="row" id="suMain">
+          <span>Select Date</span>
+          <input type="date" class="form-control"required="" ng-model="rdate" id="rdate">
+          <span>Select Time</span>
+          <input type="time" class="form-control"required="" ng-model="rtime" id="rtime">
+          <span>Price</span>
+          <input type="number" class="form-control"required="" ng-model="rprice">
+        </div>
+      </div>
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-2 suBox suImg">
+        <div class="row" id="suMain">
+          <span>Car</span>
+          <input type="text" class="form-control"required="" ng-model="rcar">
+          <span>Car No</span>
+          <input type="text" class="form-control"required="" ng-model="rcarno">
+          <span>No of seats</span>
+          <select class="col-md-12 " id="dropDown" required="" ng-model="rseats">
+            <option value="1">1 Seat</option>
+            <option value="2">2 Seats</option>
+            <option value="3">3 Seats</option>
+          </select>
+          <button type="button" class="btn btn-success" id="suBtn2" ng-click="offerRide()">Publish Offer</button>
+        </div>
+      </div>
+      <div class="col-md-1">
+      </div>
+    </div>
+  </form>
+</div>
